@@ -1,0 +1,19 @@
+MATRIZ DE CASOS DE PRUEBA - CLASIFICADOR DE USUARIOS
+
+N° | Edad | Suscripción | Resultado esperado | Estado de referencia
+1  | 8    | gratuita    | Niño - Gratuito    | EXITOSO
+2  | 12   | premium     | Niño - Premium     | EXITOSO
+3  | 13   | gratuita    | Adolescente - Gratuito | EXITOSO
+4  | 17   | premium     | Adolescente - Premium | EXITOSO
+5  | 18   | gratuita    | Adulto - Gratuito  | EXITOSO
+6  | 30   | premium     | Adulto - Premium   | EXITOSO
+7  | 59   | gratuita    | Adulto - Gratuito  | EXITOSO
+8  | 60   | premium     | Adulto mayor - Premium | EXITOSO
+9  | 75   | gratuita    | Adulto mayor - Gratuito | EXITOSO
+10 | 100  | premium     | Adulto mayor - Premium | EXITOSO
+11 | -5   | gratuita    | Edad no válida     | EXITOSO
+12 | 25   | basica      | Suscripción no válida | EXITOSO
+
+Nota: La columna de estado es el resultado esperado al ejecutar la clase
+ClasificadorUsuariosTest. Se debe conservar el registro de la salida real
+de la consola como evidencia de ejecución.

@@ -1,0 +1,31 @@
+INICIO
+    LEER edad
+    LEER suscripcion
+
+    SI edad < 0 ENTONCES
+        MOSTRAR "Edad no valida."
+    SINO
+        SI edad <= 12 ENTONCES
+            categoria <- "Nino"
+        SINO SI edad <= 17 ENTONCES
+            categoria <- "Adolescente"
+        SINO SI edad <= 59 ENTONCES
+            categoria <- "Adulto"
+        SINO
+            categoria <- "Adulto mayor"
+        FIN SI
+
+        SI suscripcion es nula ENTONCES
+            MOSTRAR "Tipo de suscripcion no valido."
+        SINO
+            tipo <- convertir a minusculas y quitar espacios
+            SI tipo = "gratuita" ENTONCES
+                MOSTRAR categoria + " | Acceso: Gratuito"
+            SINO SI tipo = "premium" ENTONCES
+                MOSTRAR categoria + " | Acceso: Premium"
+            SINO
+                MOSTRAR "Tipo de suscripcion no valido."
+            FIN SI
+        FIN SI
+    FIN SI
+FIN

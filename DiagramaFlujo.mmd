@@ -1,0 +1,23 @@
+flowchart TD
+    A([Inicio]) --> B[/Leer edad y suscripcion/]
+    B --> C{¿Edad menor que 0?}
+    C -- Si --> D[Mostrar edad no valida]
+    C -- No --> E{¿Edad <= 12?}
+    E -- Si --> F[Categoria = Nino]
+    E -- No --> G{¿Edad <= 17?}
+    G -- Si --> H[Categoria = Adolescente]
+    G -- No --> I{¿Edad <= 59?}
+    I -- Si --> J[Categoria = Adulto]
+    I -- No --> K[Categoria = Adulto mayor]
+    F --> L{¿Suscripcion gratuita?}
+    H --> L
+    J --> L
+    K --> L
+    L -- Si --> M[Mostrar categoria y acceso gratuito]
+    L -- No --> N{¿Suscripcion premium?}
+    N -- Si --> O[Mostrar categoria y acceso premium]
+    N -- No --> P[Mostrar suscripcion no valida]
+    D --> Q([Fin])
+    M --> Q
+    O --> Q
+    P --> Q
