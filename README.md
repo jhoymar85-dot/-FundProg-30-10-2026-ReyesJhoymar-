@@ -44,7 +44,4 @@ La clase de pruebas ejecuta 12 verificaciones y muestra EXITOSO o FALLIDO.
 - 60 años o más: Adulto mayor.
 - Suscripciones válidas: gratuita y premium.
 
-## Repositorio
-Nombre sugerido: `[FundProg][2026-10-30][Reyes]`
 
-Antes de publicar, verificar que el nombre cumpla exactamente las indicaciones del docente.
